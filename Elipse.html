@@ -10,8 +10,10 @@
         if (canvas.getContext){
           var cntxt = canvas.getContext('2d');
             cntxt.beginPath();
-           cntxt.arc (200, 150, 0, 2*Math.PI)();
+          cntxt.arc (200, 150, 0, 2*Math.PI)();
+           cntxt.fillStyle = "rgb(0, 255, 0)";
             cntxt.stroke();
+            cntxt.closePath();
         }
       }
     </script>

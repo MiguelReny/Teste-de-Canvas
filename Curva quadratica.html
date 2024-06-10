@@ -15,8 +15,10 @@
 </head>
 <body>
   <script>
-    // Função para gerar e definir o gradiente azul dinamicamente
     function setDynamicGradient() {
+        var canvas = document.getElementById('meuCanvas');
+        if (canvas.getContext){
+          var cntxt = canvas.getContext('2d');
       var gradient = "linear-gradient(to bottom, #007bff, #00bfff)";
       document.body.style.background = gradient;
     }
